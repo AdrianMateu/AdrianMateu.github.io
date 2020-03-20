@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+
+    {% include meta.html %}
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/main.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/favicon-16x16.png">
+	<link rel="manifest" href="{{ site.baseurl }}/images/site.webmanifest">
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body class="is-preload">
+
+    <!-- Header -->
+    
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="{{ site.baseurl }}/images/avatar.jpg" alt="" /></a>
+					<h1><strong>I'm Adrián Mateu,</strong><br /> sound engineer &nbsp; & <br/>junior web developer.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+        <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/work">Works</a>
+            <a href="{{ site.baseurl }}/about">About</a>
+        </nav>		
+				<section id="one">
+					<header class="major"></header>
+        </section>
+        <div id="blog" role="main">
+            {{ content }}
+          </div>
+      </div>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/AdrianMateu" target="_blank" class="icon"><i class="fab fa-github"></i></i></a></li>
+						<li><a href="https://www.linkedin.com/in/adrianmateu" class="icon" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#" class="icon"><i class="far fa-envelope"></i></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; AMM</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/jquery.poptrox.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/browser.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/breakpoints.min.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/util.js"></script>
+			<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+
+	</body>
+</html>
